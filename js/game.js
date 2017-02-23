@@ -61,16 +61,16 @@ var princessesCaught = 0;
 var stone = {};
 
 var monster = {
-    speed:32
+    
 };
 var monster1 = {
-    speed:32
+    
 };
 var monster2 = {
-    speed:32
+    
 };
 var monster3 = {
-    speed:32
+   
 };
 
 var heroContador = 0;
@@ -180,7 +180,7 @@ var update = function (modifier) {
         localStorage.setItem("heroContador", heroContador);
     }
 
-    if(76 in keysDown){
+    if(83 in keysDown){
         escenario = localStorage.getItem("escenario");
         princessesCaught = localStorage.getItem("princessesCaught");
         heroContador = localStorage.getItem("heroContador");
@@ -263,7 +263,7 @@ var render = function () {
     ctx.font = "24px Helvetica";
     ctx.textAlign = "left";
     ctx.textBaseline = "top";
-    ctx.fillText("Princesses caught: " + princessesCaught + " escenario: " + escenario + " muertes: " + heroContador, 32, 32);
+    ctx.fillText("Princesses caught: " + princessesCaught + " nivel: " + escenario + " muertes: " + heroContador, 32, 32);
 };
 
 // The main game loop
